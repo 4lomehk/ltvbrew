@@ -1,0 +1,1030 @@
+
+<!DOCTYPE html>
+<html lang="zh-HK" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香港打工仔肉身修復引擎 | 陀地抗炎自救指南 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        amber: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Microsoft JhengHei', 'PingFang HK', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-border-glow {
+            border: 2px solid #d97706;
+            box-shadow: 0 4px 20px rgba(217, 119, 6, 0.2);
+        }
+        .card-number {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            letter-spacing: -2px;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: #090d16;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #334155;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 dark:bg-[#090d16] text-slate-900 dark:text-slate-100 font-sans transition-colors duration-200 min-h-screen flex flex-col selection:bg-amber-400 selection:text-slate-950">
+
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/90 dark:bg-[#090d16]/90 border-b border-slate-200 dark:border-slate-800 px-4 py-3 shadow-sm">
+        <div class="max-w-5xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center space-x-2">
+                <span class="w-3 h-3 bg-amber-500 rounded-full animate-pulse"></span>
+                <span class="font-black text-lg tracking-wider uppercase bg-gradient-to-r from-amber-600 to-amber-800 dark:from-amber-400 dark:to-amber-600 bg-clip-text text-transparent">
+                    香港打工仔肉身修復引擎
+                </span>
+            </div>
+
+            <!-- Header Controls -->
+            <div class="flex items-center space-x-2">
+                <button id="lang-btn" onclick="toggleLanguage()" class="px-2.5 py-1 text-xs font-bold rounded-lg border border-slate-300 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-800 text-amber-700 dark:text-amber-400 transition">
+                    繁 / ENG
+                </button>
+                <button id="theme-btn" onclick="toggleTheme()" class="px-2.5 py-1 text-xs font-bold rounded-lg border border-slate-300 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
+                    ☀️ 淺色
+                </button>
+                <button id="skip-btn" onclick="skipMicroInteractions()" class="px-2.5 py-1 text-xs font-black bg-amber-500 hover:bg-amber-600 text-slate-950 rounded-lg shadow transition" title="狗衝直達自我審問">
+                    ⚡ SKIP 狗衝
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-5xl w-full mx-auto p-4 space-y-8">
+
+        <section id="intro-block" class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md">
+            <div class="flex flex-col md:flex-row gap-6 items-center">
+                <div class="w-full md:w-1/3 flex justify-center">
+                    <img src="https://placehold.co/400x400/f1f5f9/d97706?text=HK+BIO+ENGINE+2026" alt="HK Bio Engine" class="rounded-xl w-48 h-48 object-cover border-2 border-amber-500/50 shadow-md">
+                </div>
+                <div class="w-full md:w-2/3 space-y-3">
+                    <div class="inline-block px-3 py-1 bg-amber-100 dark:bg-amber-500/20 text-amber-800 dark:text-amber-400 rounded-full text-xs font-black uppercase tracking-wide border border-amber-300 dark:border-amber-500/30" data-i18n="badge_protocol">
+                        香港打工仔抗炎自救戰線 v2026.9 ULTIMATE
+                    </div>
+                    <h1 class="text-2xl md:text-3xl font-black text-slate-900 dark:text-white leading-tight" data-i18n="intro_title">
+                        你個身體唔係木頭車，係天天行緊觀塘線嘅港鐵車頭。
+                    </h1>
+                    <p class="text-sm md:text-base text-slate-700 dark:text-slate-300 leading-relaxed" data-i18n="intro_desc">
+                        講真嗰句，喺香港打工，天天開 OT、食廢料外賣飯盒、睏得四五個鐘，身體慢性發炎就等於喺你個引擎入面塞滿觀塘放工時間嘅泥頭車。咪再聽那些吹得天花亂墜嘅廣告，呢度精選 18 大自然界與肉身修復最強戰略！
+                    </p>
+                    <div class="text-xs text-slate-500 dark:text-slate-400 border-t border-slate-200 dark:border-slate-800 pt-2 flex items-center justify-between font-mono">
+                        <span id="last-visit-time">校正時間: 加載中...</span>
+                        <span class="text-amber-600 dark:text-amber-400 font-bold">STATUS: READY (18 CORE MODULES)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="exchange-block" class="transition-all duration-300">
+            <div id="exchange-container" class="bg-amber-50/60 dark:bg-[#131b2e] border border-amber-400/50 dark:border-amber-500/30 rounded-2xl p-5 shadow-md space-y-4">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <h2 class="text-base font-black uppercase tracking-wider text-amber-800 dark:text-amber-400" data-i18n="support_title">支持創作與自我審問</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <a href="https://buy.stripe.com/4gM4gz94Z2Ny5zjblN9fW06" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white font-black py-4 px-6 rounded-xl transition shadow-md text-center transform active:scale-95">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <span data-i18n="btn_stripe">支持本地健康內容創作 (STRIPE)</span>
+                    </a>
+
+                    <button onclick="triggerBodyCheck()" class="flex flex-col items-center justify-center bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-900 dark:text-slate-100 font-bold py-3 px-4 rounded-xl transition border border-slate-300 dark:border-slate-700 shadow-sm text-left">
+                        <span class="text-xs text-amber-600 dark:text-amber-400 uppercase font-black" data-i18n="btn_quiz_tag">自我審問</span>
+                        <span class="text-sm mt-1" data-i18n="btn_quiz_title">『問下自己：你個身體係咪已經天天燒緊機？』</span>
+                    </button>
+                </div>
+                <div id="quiz-message-box" class="hidden bg-rose-100 dark:bg-amber-500/10 border border-rose-300 dark:border-amber-500/40 rounded-xl p-4 text-sm text-rose-900 dark:text-amber-300">
+                    <p class="font-bold leading-relaxed" data-i18n="quiz_warning">
+                        老實講，如果你天天只顧住賺錢而忽略身體，等爆廠先去求醫就大獲。你準備好認真面對身體傳出嚟嘅警號未？
+                    </p>
+                    <button onclick="dismissExchangeBlock()" class="mt-3 text-xs bg-amber-500 text-slate-950 px-3 py-1.5 rounded-lg font-black hover:bg-amber-400 transition" data-i18n="btn_dismiss">
+                        知道，關閉此區塊 ✕
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="pyramid-block" class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-6">
+            <div class="text-center space-y-2">
+                <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest" data-i18n="pyramid_sub">搞清底層邏輯</span>
+                <h2 class="text-xl md:text-2xl font-black text-slate-900 dark:text-white leading-snug" data-i18n="pyramid_headline">
+                    「你寧願每個月花幾百蚊買堆雜牌補充劑當心靈安慰，定係直接調整飲食徹底抗炎？」
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-4 bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-800/50 rounded-xl space-y-2">
+                    <h3 class="font-black text-rose-700 dark:text-rose-400 flex items-center gap-2">
+                        <span>❌</span> <span data-i18n="bad_logic_title">迷思：盲目亂吞丸仔</span>
+                    </h3>
+                    <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed" data-i18n="bad_logic_desc">
+                        聽廣告狂吞雜牌丸仔，就好似大廈水務喉管爆裂，你唔去修補，反而在室內死命開大水龍頭，純粹係白白浪費水費。背景發炎唔清零，吞幾多丸仔都只係直接排走。
+                    </p>
+                </div>
+                <div class="p-4 bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50 rounded-xl space-y-2">
+                    <h3 class="font-black text-emerald-700 dark:text-emerald-400 flex items-center gap-2">
+                        <span>⚡</span> <span data-i18n="good_logic_title">正解：一口咬落原型食物</span>
+                    </h3>
+                    <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed" data-i18n="good_logic_desc">
+                        用原型食物擋走超加工廢料，透過牙齒撕裂咀嚼、唾液發酵，補齊關鍵抗炎要素。身體負荷一輕，精力、爆發力同睡眠品質即刻返嚟！
+                    </p>
+                </div>
+            </div>
+
+            <div class="gold-border-glow bg-amber-500/10 dark:bg-gradient-to-r dark:from-amber-500/20 dark:via-amber-500/5 dark:to-transparent rounded-xl p-6 text-center space-y-4">
+                <h3 class="text-lg md:text-xl font-black text-amber-800 dark:text-amber-400 uppercase tracking-wider" data-i18n="cta_gold_title">
+                    重新奪回身體主導權
+                </h3>
+                <p class="text-sm text-slate-800 dark:text-slate-200 max-w-xl mx-auto font-bold" data-i18n="cta_gold_desc">
+                    拒絕被超加工廢料與化學膠囊綁架，由今日開始調整飲食與作息！
+                </p>
+            </div>
+        </section>
+
+        <section id="supplements-block" class="space-y-6">
+            <div class="text-center space-y-1">
+                <h2 class="text-2xl font-black tracking-tight text-slate-900 dark:text-white uppercase">
+                    18 大陀地肉身修復與未來抗炎戰略
+                </h2>
+                <p class="text-xs text-slate-500 dark:text-slate-400 font-mono">
+                    [ PHYSICAL CHEWING & BIOLOGICAL REPAIR PROTOCOL - 18 MODULES ]
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- Card 01: Curcumin 薑黃素 (Image Item #4) -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">01 / 細胞信號切斷 & NF-κB 降溫</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">01</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Curcumin 薑黃素 (鮮磨老薑 / 印度咖喱原薑黃)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：觀塘繞道夜間緊急封路清理事故車輛 vs 抹紙巾式止痛藥<br>
+                            <span class="text-[11px] font-normal opacity-90">止痛藥好似攞濕紙巾抹走車禍油污；天然薑黃素配合油脂咀嚼，好似交通警夜間直接封鎖觀塘繞道，將發炎指揮中心 NF-κB 訊號源頭徹底截斷。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> 鮮磨有機老薑黃根、優質印度原粒咖喱薑黃、黑胡椒配合好油。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 香港打工仔天天食炸雞外賣、精製劣油，體內 NF-κB 發炎通路 24 小時保持開啟狀態。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> 慢性發炎信號狂飆，令細胞異常增殖無法自毀，免疫系統疲於奔命。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 慢性關節痛、咽喉無故發炎、腸胃脹痛、全身痠痛失眠。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> 抑制 NF-κB 通路，誘導異化細胞自毀（Apoptosis），激活 T 細胞防禦力。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：每星期 2-3 次薑黃咖喱或鮮薑黃湯</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('curcumin')" id="chk-curcumin" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card 02: Quercetin 槲皮素 (Image Item #5) -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">02 / 血管新生阻斷 & 衰老細胞清除</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">02</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Quercetin 槲皮素 (紫洋蔥 / 帶皮紅蘋果 / 蜂膠)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：中環高級寫字樓雙重防火玻璃隔音系統 vs 聽之任之任由噪音炸裂<br>
+                            <span class="text-[11px] font-normal opacity-90">吞化學化痰藥得個等字；嚼食紫洋蔥同帶皮蘋果，天然槲皮素好似中環寫字樓雙層防火隔音牆，阻斷組織胺狂發，同時切斷壞細胞嘅偷渡供血血管。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> 紫洋蔥皮與果肉、帶皮有機紅蘋果、蕎麥、天然蜂膠。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 香港空氣污染、冷氣房塵蟎過敏，加上少食帶皮蔬果，導致肥大細胞過度釋放組織胺。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> 壞細胞會自行偷拉新血管（Angiogenesis）吸收養份，體內衰老殭屍細胞持續堆積。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 鼻敏感爆發、鼻塞眼癢、皮膚莫名蕁麻疹、血管硬化。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> 阻斷壞細胞血管生成，清除衰老殭屍細胞，穩定肥大細胞止鼻水止癢。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：每日半個紫洋蔥或連皮蘋果</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('quercetin')" id="chk-quercetin" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card 03: Turkey Tail & Reishi 雲芝與赤芝 (Image Items #3 & #7) -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">03 / NK 自然殺手細胞 & T 細胞武裝</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">03</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Turkey Tail & Reishi 雲芝與赤芝 (野生雲芝 / 赤芝濃縮煲湯)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：飛虎隊 (SDU) 攻堅網絡 vs 街頭巡警守株待兔<br>
+                            <span class="text-[11px] font-normal opacity-90">一般維他命只係普通巡警；雲芝與赤芝嘅 β-聚糖 (Beta-glucans) 好似飛虎隊精銳武器，一服下即刻點燃大腦與脾臟嘅 NK 細胞同 T 細胞，精準獵殺變異壞細胞。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> 野生雲芝、原隻赤靈芝切片煲湯、黑木耳。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 長期熬夜、工作壓力拉爆皮質醇，令體內 NK 細胞（Natural Killer Cells）陷入沉睡。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> NK 細胞與 T 細胞活性一低，變異細胞就會逃避監控並肆虐擴散。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 淋巴腫脹、極易染病感染、病後復原極慢、體力耗盡。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> 激活先天與後天免疫系統，倍增 T 細胞與 NK 細胞戰鬥力，全面抑制異化腫塊。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：每星期 1-2 次靈芝/雲芝燉湯</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('mushrooms')" id="chk-mushrooms" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card 04: Chaga & Maitake 白樺茸與舞菇 (Image Items #1 & #2) -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">04 / 細胞因子狂暴輸出 & 巨噬細胞激活</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">04</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Chaga & Maitake 白樺茸與舞菇 (野生舞菇 / 樺樹菇)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：香港國際機場三跑道系統高效排程 vs 舊式單跑道大塞機<br>
+                            <span class="text-[11px] font-normal opacity-90">吞合成抗氧化劑好似單跑道塞爆；白樺茸與舞菇提供極高 SOD 活性同巨噬細胞刺激，好似三跑道系統，高速度將體內廢物與壞細胞排走。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> Wild Chaga 白樺茸萃取/煮水、鮮舞菇 (Maitake)、有機黑木耳。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 自由基過載、環境毒素長期累積，巨噬細胞吞噬能力嚴重退化。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> 缺乏細胞因子（Cytokines）調控，身體清垃圾效率直接歸零。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 肌膚早衰暗啞、腸胃消化不良、皮膚易長突起物。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> 大幅提升巨噬細胞活性，促使細胞因子正常輸出，清除游離自由基。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：每星期滾舞菇湯或飲白樺茸茶</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('chaga')" id="chk-chaga" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card 05: Black Seed Extract 黑種草籽 (Image Item #8) -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">05 / 百病之油 & 奎寧昆精華</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">05</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Black Seed 黑種草籽 (原粒冷壓黑種草油 / 黑芝麻)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：昂船洲污水處理廠高壓沉澱淨化工程 vs 隨手潑水掩蓋臭味<br>
+                            <span class="text-[11px] font-normal opacity-90">一般植物油只有熱量；黑種草籽入面嘅黑種草醌 (Thymoquinone) 好似高壓污水沉澱池，直接將體內幾十年積聚嘅致炎廢物深層包覆排走。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> 冷壓原粒黑種草籽油 (Nigella Sativa)、熟黑芝麻粒。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 港人日常飲食嚴重缺乏天然植物活性醌類化合物，氣管與腸道屏障脆弱。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> 缺乏黑種草醌致使體內 T 細胞缺乏分化動能，過敏與發炎反復發作。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 哮喘氣管敏、腸易激綜合症 (IBS)、胰島素不敏感。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> 誘導壞細胞自毀，拉高巨噬細胞吞噬力，平衡血糖與舒緩氣管痙攣。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：每日半茶匙冷壓黑種草籽油</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('blackseed')" id="chk-blackseed" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card 06: Zinc 鋅 -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">06 / 睪酮點火 & 免疫防衛</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">06</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Zinc 鋅 (原隻生蠔 / 鮮切草飼牛肉)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：茶餐廳手沖絲襪奶茶 vs 三合一速溶奶茶粉<br>
+                            <span class="text-[11px] font-normal opacity-90">吞丸仔好似沖速溶粉得個甜字；原隻生蠔同鮮牛肉牙齒一口咬落去，即刻觸發唾液酶同胃酸，好似瓦煲滾水手沖絲襪奶茶，茶香奶香完全交融。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> 原隻法國/澳洲鮮生蠔、草飼封門柳/牛心、南瓜籽。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 長期高壓開 OT、大量出汗，加上食大量加工精製碳水，導致鋅離子急速流失。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> 鋅係合成睪酮與 DNA 複製嘅關鍵催化劑，缺鋅令荷爾蒙斷崖式下跌。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 晨勃消失、傷口癒合極慢、暗瘡爆發、經常感冒、脫髮加劇。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> 啟動男性荷爾蒙合成鏈，提升精子活力與基礎免疫防衛。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：每星期 2-3 次鮮生蠔/天然紅肉</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('zinc')" id="chk-zinc" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card 07: Magnesium 鎂 -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">07 / 神經降溫 & 深層睡眠</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">07</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Magnesium 鎂 (原粒生南瓜籽 / 濃黑朱古力)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：九龍城老字號手打墨魚丸 vs 工廠流水線假魚蛋<br>
+                            <span class="text-[11px] font-normal opacity-90">鎂膠囊外殼易搞到胃脹；原粒生南瓜籽一口咬落去，伴隨天然鎂離子釋放，好似手打墨魚丸般爽彈天然，深層降溫神經系統。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> 原粒生南瓜籽、85% 以上濃黑朱古力、深綠色有機蔬菜。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 精神長期緊繃、喝大量濃茶咖啡，皮質醇過高將體內鎂離子經尿液排出。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> 缺鎂令副交感神經無法啟動，肌肉與血管無法舒張，大腦整夜「燒機」。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 頑固失眠、半夜抽筋、眼皮經常跳動、偏頭痛、焦慮心悸。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> 放鬆血管平滑肌，降低神經過度興奮，大幅拉長深層睡眠時間。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：每日手抓一小把生南瓜籽/黑朱古力</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('mg')" id="chk-mg" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card 08: Creatine 肌酸 -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">08 / 爆發力加持 & 腦部 ATP</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">08</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Creatine 肌酸 (鮮切牛心 / 厚切牛肉)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：香港傳統竹棚超強韌性結構 vs 預製水泥硬板<br>
+                            <span class="text-[11px] font-normal opacity-90">純肌酸粉係單一化合物；鮮切牛肉同牛心入面嘅肌酸同天然血紅素鐵交織，咀嚼撕裂肉質時帶來極強營養韌性，好似竹棚般有極佳彈性與支撐力。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> 新鮮草飼牛肉、牛心、野生三文魚。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 只食廢料加工肉品（如午餐肉、腸仔），導致體內磷酸肌酸庫存歸零。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> 肌酸係 ATP 快速再生原料。缺乏肌酸會導致肌肉爆發力衰退，大腦迅速昏沉。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 嚴重腦霧、開會 10 分鐘即昏睡、做運動舉重乏力。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> 給大腦與肌肉補充 ATP 備用庫，提升高強度爆發力與邏輯思考速度。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：每星期品嚐煎厚切牛肉/牛心</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('creatine')" id="chk-creatine" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card 09: Vitamin D3 + K2 -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">09 / 鈣質精準引導 & 骨骼免疫</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">09</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">維他命 D3 + K2 (草飼太陽蛋黃 / 鮮煎牛肝)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：大排檔猛火鑊氣爆炒 vs 便利店微波叮叮飯<br>
+                            <span class="text-[11px] font-normal opacity-90">滴劑丸仔孤立無味；原隻草飼太陽蛋黃與鮮煎牛肝一口咬下，天然維他命 A、D3、K2 在口腔混合，好似大排檔猛火鑊氣，食材與火候完美融為一體。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> 有機草飼雞蛋黃、鮮煎牛肝、納豆、熟成硬芝士。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 長期留在寫字樓室內工作、早出晚歸完全見不到太陽，D3 合成量幾乎為零。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> 缺乏 D3 令免疫系統失控；缺少 K2 令鈣質亂沉積喺血管牆壁，造成血管硬化。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 骨質疏鬆、腰酸背痛、季節性抑鬱情緒低落、血管鈣化。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> D3 開啟鈣質吸收通道，K2 精準將鈣質鎖入骨骼，遠離血管鈣化。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：每日 2 隻草飼太陽蛋黃 / 鮮牛肝</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('d3')" id="chk-d3" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card 10: Omega 3 魚油 -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">10 / 血管清理 & 全身抗炎</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">10</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Omega-3 (挪威野生鯖魚 / 帶骨沙丁魚)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：渠務署大清渠排水系統 vs 用紙巾塞住漏水喉<br>
+                            <span class="text-[11px] font-normal opacity-90">膠囊魚油擺久易氧化；直接食野生鯖魚或帶骨沙丁魚，天然 EPA/DHA 與蝦青素直接沖洗血管，好似渠務署大型清渠系統般徹底通暢。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> 原條挪威野生鯖魚、帶骨沙丁魚、野生三文魚。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 外賣飯盒大多使用劣質種子油，體內 Omega-6 與 Omega-3 比例失衡（飆升至 20:1）。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> 過量 Omega-6 持續觸發全身細胞膜發炎，令血管壁產生傷口誘發斑塊。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 慢性皮膚炎、濕疹復發、關節腫痛僵硬、血壓偏高。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> 降低發炎因子（TNF-α, IL-6），清洗血管雜質，將發炎指數清零。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：每星期至少食 2 次野生鯖魚/沙丁魚</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('omega')" id="chk-omega" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card 11: CoQ10 輔酶 Q10 -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">11 / 粒線體火花塞 & 心臟 Engine Oil</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">11</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">CoQ10 輔酶 Q10 (原隻牛心 / 野生沙丁魚)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：舊式潮州大排檔雙風機發電機 vs 網購低價靜音廢物風扇<br>
+                            <span class="text-[11px] font-normal opacity-90">單靠吞 CoQ10 丸仔好比買廢物電風扇；咬落原隻鮮牛心，內含極高濃度天然泛醇，好似大排檔強勁發電機，火花一點即刻拉滿心臟脈衝。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> 新鮮草飼牛心、原條帶皮沙丁魚、草飼牛肉。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 年過 25 歲體內自合成能力下滑，服食降膽固醇藥（Statin）更會切斷 CoQ10 途徑。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> CoQ10 係粒線體電子傳輸鏈火花塞。缺乏 CoQ10，細胞無法順利轉化食物成 ATP。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 行兩層樓梯即刻氣喘、胸口發悶、莫名體力透支、心律不齊。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> 給心肌細胞同全身粒線體灌入潤滑油，重啟 ATP 製造工廠，拉高耐力。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：每星期 1-2 次煎牛心或沙丁魚</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('coq10')" id="chk-coq10" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card 12: Glycine + NAC 甘氨酸與 NAC -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">12 / 谷胱甘肽爆破組 & 肝臟解毒</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">12</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Glycine + NAC (濃大骨湯 / 豬皮 / 蒜頭)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：獅子山隧道夜間重鋪瀝青修復工程 vs 攞塊濕紙巾抹地<br>
+                            <span class="text-[11px] font-normal opacity-90">單靠喝涼茶好比用濕紙巾擦地；慢火熬製嘅豬骨膠原大骨湯含甘氨酸，配合蒜頭洋蔥嘅有機硫，好比夜間深層重鋪隧道瀝青，徹底清走肝毒。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> 本地草飼牛骨/豬骨慢燉濃湯、帶皮豬腳、天然蒜頭、洋蔥。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 應酬飲酒、食大量含添加劑外賣，導致體內解毒之王「谷胱甘肽」被耗盡。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> 甘氨酸與半胱氨酸係合成谷胱甘肽雙壁。缺乏這兩者，肝臟解毒網絡全面癱瘓。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 宿醉幾日唔醒、口臭體臭、皮膚黃化暗沉、氣管經常發炎。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> 激活體內最強自生抗氧化劑，清理重金屬與酒精代謝毒物，保護呼吸道。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：每星期飲 2 次濃大骨湯/多食洋蔥蒜頭</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('glynac')" id="chk-glynac" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card 13: Potassium 鉀 -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">13 / 電解質水腫泵 & 鈉離子沖洗</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">13</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Potassium 鉀 (天然椰皇水 / 牛油果 / 深綠苋菜)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：德福花園地下沉箱抽水泵 vs 攞吸水紙吸積水<br>
+                            <span class="text-[11px] font-normal opacity-90">食利尿丸得個咸字；喝天然椰皇水或食高鉀莧菜，好似強勁抽水泵，精準開啟鈉鉀泵，將體內積聚嘅茶餐廳咸汁同水腫排走。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> 新鮮無糖椰皇水、有機牛油果、深綠色野莧菜/菠菜。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 外賣三寶飯、車仔麵濃味汁底含極高精製鈉鹽，而蔬菜攝取量極低。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> 鉀離子係維持細胞膜電位與水分平衡核心。缺鉀造成血管緊張與水分滯留。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 早上起床面腫眼腫、下肢水腫、血壓居高不下、肌肉無力。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> 強效平衡細胞水分，加速排出多餘鈉離子，平穩血壓，消除浮腫。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：每日 1 個牛油果 / 天然椰皇水</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('potassium')" id="chk-potassium" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card 14: Active B-Complex 活性維他命 B 雜 -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">14 / 甲基化運轉 & 神經高速公路</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">14</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Active B-Complex (鮮牛肝 / 鮮雞肝 / 蛤蜊)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：屯門公路三線全開無阻通車 vs 觀塘道放工時間大塞車<br>
+                            <span class="text-[11px] font-normal opacity-90">普通合成 B 雜丸仔需要肝臟二次轉化，好似觀塘道大塞車；鮮牛肝與蛤蜊提供天然甲基 B12 與葉酸，好似屯門公路三線暢通，神經訊號秒速到達。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> 新鮮草飼牛肝/雞肝、天然蛤蜊/蜆肉、有機蛋黃。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 很多打工仔有 MTHFR 基因變異，無法有效將合成 B 雜轉化成活性形式。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> 活性 B6, B9, B12 係甲基化循環燃料，缺乏會導致同半胱氨酸堆積破壞血管。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 手腳麻痺、莫名焦慮抑鬱、神經痛、記憶力下降。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> 打通甲基化通道，清走同半胱氨酸毒素，修復神經髓鞘。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：每星期食 1 次鮮肝臟或蛤蜊</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('bcomplex')" id="chk-bcomplex" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card 15: Dandelion Root 蒲公英根 (Image Item #6) -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">15 / 膽汁流動衝擊 & 淋巴淨化</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">15</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Dandelion Root 蒲公英根 (蒲公英根濃縮煎湯 / 苦甘菜)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：香港地鐵夜間鋼軌超聲波探傷與打磨 vs 表面打掃月台地板<br>
+                            <span class="text-[11px] font-normal opacity-90">瀉藥只打掃表面腸道；蒲公英根嘅天然苦素好似地鐵鋼軌超聲波打磨，深層拉動膽汁流動，直接促使淋巴細胞與巨噬細胞清除微腫瘤異化因子。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> 烘焙蒲公英根茶、天然苦甘菜、有機蒲公英葉沙律。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 港人極度抗拒苦味食材，膽汁分泌停滯淤堵，膽固醇結晶堆積。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> 膽汁流動一慢，脂溶性毒素無法順利隨糞便排出，反覆回流重毒肝臟。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 食飽後右上腹隱痛、口苦眼黃、脂肪肝、膽結石風險。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> 強效刺激膽汁分泌與排毒，啟動淋巴球殺敵，清走深層毒素。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：每星期飲 2 次濃蒲公英根茶</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('dandelion')" id="chk-dandelion" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card 16: Sulforaphane 蘿蔔硫素 -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">16 / Nrf2 通路開關 & 基因護甲</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">16</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Sulforaphane 蘿蔔硫素 (有機青花菜苗 / 天然芥末)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：九龍寨城治安徹底整頓升級 vs 隨便派個保安巡樓<br>
+                            <span class="text-[11px] font-normal opacity-90">一般蔬菜只提供纖維；生嚼三日齡青花菜苗釋放蘿蔔硫素，好似徹底重組警政系統，直接打開 Nrf2 基因開關，啟動幾百種內源性解毒酶。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> 3日齡有機青花菜苗 (Broccoli Sprouts)、芥末、羽衣甘藍。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 蔬果煮過熟破壞黑芥子酶 (Myrosinase)，無法化合生成蘿蔔硫素。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> Nrf2 通路長期休眠，體內 DNA 易受環境致癌物與微塑膠突變破壞。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 解毒能力極差、易起瘜肉、過敏性濕疹反復爆發。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> 激活 Nrf2 通路，拉高第二階段解毒酶，護衛 DNA 免受突變。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：每星期生食一小盒青花菜苗</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('sulfora')" id="chk-sulfora" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card 17: Astaxanthin 蝦青素 -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">17 / 跨膜抗氧化盾 & 視網膜防護</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">17</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Astaxanthin 蝦青素 (野生紅三文魚 / 帶殼櫻花蝦)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：超級颱風十號風球防風防爆鋼鐵閘門 vs 用膠紙貼窗花<br>
+                            <span class="text-[11px] font-normal opacity-90">普通維他命 C 好似膠紙貼窗；天然蝦青素能穿透細胞膜雙層（包含血腦屏障），好似十號風球鋼鐵閘門，全方位抵擋藍光與氧化風暴。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> 野生阿拉斯加紅三文魚、帶殼櫻花蝦、雨生紅球藻。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 打工仔每日盯屏幕 12 小時，強烈藍光破壞黃斑部與腦神經細胞膜。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> 水溶性抗氧化劑無法穿透血腦屏障，眼底與大腦細胞膜任由氧化自由基破壞。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 眼睛乾澀刺痛、視力模糊、偏頭痛、腦細胞早衰。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> 穿透血腦與血視網膜屏障，舒緩眼肌疲勞，保護大腦神經元。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：每星期食 2 次野生紅三文魚/櫻花蝦</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('asta')" id="chk-asta" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card 18: Micro-dose Lithium 微量鋰 -->
+                <div class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-start border-b border-slate-200 dark:border-slate-800 pb-2">
+                            <span class="text-xs font-black text-amber-600 dark:text-amber-400 uppercase tracking-widest">18 / 神經元避震器 & 抗壓穩定器</span>
+                            <span class="card-number text-4xl text-slate-300 dark:text-slate-700/50 font-bold">18</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 dark:text-white">Micro-dose Lithium (天然高礦物質深山泉水)</h3>
+                        <div class="text-xs bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/20 text-amber-900 dark:text-amber-300 p-3 rounded-xl font-bold leading-relaxed">
+                            💡 跨界神對比：頂級跑車雙願骨避震懸掛 vs 爛鐵車架硬碰硬<br>
+                            <span class="text-[11px] font-normal opacity-90">精神緊張時硬頂好似爛鐵車架；天然礦泉水中嘅微量鋰離子，好似頂級雙願骨避震，吸收一切來自老闆與客戶嘅精神撞擊，保持大腦冷靜。</span>
+                        </div>
+                        <div class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                            <div><strong class="text-amber-700 dark:text-amber-400">🥩 加入 / 原生來源：</strong> 未經過度過濾嘅天然高礦物質泉水、天然岩鹽。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">🔴 出事原因：</strong> 日常飲用蒸餾水缺乏天然地層微量礦物質，神經元興奮毒性過高。</div>
+                            <div><strong class="text-rose-600 dark:text-rose-400">⚠️ 影響問題：</strong> 微量鋰能促進腦衍生神經生長因子（BDNF），阻斷過度穀氨酸毒性。</div>
+                            <div class="bg-rose-50 dark:bg-rose-950/30 p-2.5 rounded-lg border border-rose-200 dark:border-rose-900/40">
+                                <strong class="text-rose-700 dark:text-rose-400 font-black">💥 身體上出現問題 (肉體警號)：</strong> 容易扯火發脾氣、情緒極度波動、腦細胞易疲勞。
+                            </div>
+                            <div class="bg-emerald-50 dark:bg-emerald-950/30 p-2.5 rounded-lg border border-emerald-200 dark:border-emerald-900/40">
+                                <strong class="text-emerald-700 dark:text-emerald-400 font-black">⚡ 主要幫助及解決：</strong> 穩定神經細胞膜電位，促進神經新芽生長，拉高情緒抗壓閾值。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center text-xs">
+                        <span class="font-black text-amber-700 dark:text-amber-400">目標：選用優質天然高礦物質水補充</span>
+                        <label class="flex items-center space-x-1 cursor-pointer">
+                            <input type="checkbox" onchange="toggleTrack('lithium')" id="chk-lithium" class="rounded border-slate-300 dark:border-slate-700 text-amber-600 focus:ring-amber-500">
+                            <span class="text-slate-500 dark:text-slate-400 font-bold">今日已達標</span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="metrics-block" class="bg-white dark:bg-[#131b2e] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-md space-y-4">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+                <div>
+                    <span class="text-xs text-amber-600 dark:text-amber-400 font-black uppercase font-mono">HK.LAB.CHECK</span>
+                    <h3 class="text-lg font-black text-slate-900 dark:text-white">香港通用身體指標驗車 DashBoard</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">輸入你喺香港體檢報告上面嘅數字，即刻檢查有冇偏離標準！</p>
+                </div>
+                <input type="text" id="metric-search" oninput="filterMetrics()" placeholder="搜尋指標 (例: 血糖, 膽固醇)..." class="px-3 py-1.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-slate-200 rounded-lg w-full md:w-56 focus:outline-none focus:border-amber-500">
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-xs text-slate-700 dark:text-slate-300">
+                    <thead class="bg-slate-100 dark:bg-slate-900/80 text-slate-900 dark:text-slate-200 uppercase font-black border-b border-slate-200 dark:border-slate-700">
+                        <tr>
+                            <th class="p-3 rounded-l-lg">香港體檢指標</th>
+                            <th class="p-3">本地參考標準值</th>
+                            <th class="p-3">你的報告數值</th>
+                            <th class="p-3 rounded-r-lg">狀態判定</th>
+                        </tr>
+                    </thead>
+                    <tbody id="metrics-table-body" class="divide-y divide-slate-200 dark:divide-slate-700/50 font-mono">
+                        <!-- Dynamic Metric Population -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-auto border-t border-slate-200 dark:border-slate-800 bg-slate-200 dark:bg-slate-950 py-6 px-4 text-center">
+        <div class="max-w-5xl mx-auto space-y-2">
+            <p class="text-sm md:text-base font-black tracking-widest text-amber-800 dark:text-amber-400">
+                Don't just live, Optimize. 將抗炎進行到底 Make Anti-inflammatory Great Again
+            </p>
+            <p class="text-xs text-slate-600 dark:text-slate-400 font-mono">
+                Hong Kong Local Health Engine © 2026. Fully self-contained bio-optimization guide.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const METRICS_DATA = [
+            { id: 'bp_sys', name: '收縮壓 / 上壓 (BP Systolic)', ref: '90 - 120', min: 90, max: 120, unit: 'mmHg' },
+            { id: 'bp_dia', name: '舒張壓 / 下壓 (BP Diastolic)', ref: '60 - 80', min: 60, max: 80, unit: 'mmHg' },
+            { id: 'fbg', name: '空腹血糖 (Fasting Glucose)', ref: '3.9 - 5.6', min: 3.9, max: 5.6, unit: 'mmol/L' },
+            { id: 'hba1c', name: '糖化血紅素 (HbA1c)', ref: '4.0 - 5.6', min: 4.0, max: 5.6, unit: '%' },
+            { id: 'crp', name: '超敏C反應蛋白 (hs-CRP 發炎指標)', ref: '< 1.0', max: 1.0, unit: 'mg/L' },
+            { id: 'chol', name: '總膽固醇 (Total Cholesterol)', ref: '< 5.2', max: 5.2, unit: 'mmol/L' },
+            { id: 'tg', name: '三酸甘油酯 (Triglycerides)', ref: '< 1.7', max: 1.7, unit: 'mmol/L' },
+            { id: 'hdl', name: '高密度膽固醇 (HDL 好膽固醇)', ref: '> 1.0', min: 1.0, unit: 'mmol/L' },
+            { id: 'ldl', name: '低密度膽固醇 (LDL 壞膽固醇)', ref: '< 3.0', max: 3.0, unit: 'mmol/L' },
+            { id: 'ua', name: '尿酸 (Uric Acid)', ref: '200 - 420', min: 200, max: 420, unit: 'μmol/L' },
+            { id: 'alt', name: '谷丙轉氨酶 (ALT 肝功能)', ref: '10 - 40', min: 10, max: 40, unit: 'U/L' },
+            { id: 'creat', name: '肌酐 (Creatinine 腎功能)', ref: '60 - 110', min: 60, max: 110, unit: 'μmol/L' },
+            { id: 'd3', name: '維他命 D3 濃度 (25-OH D3)', ref: '75 - 150', min: 75, max: 150, unit: 'nmol/L' },
+            { id: 'b12', name: '維他命 B12 濃度', ref: '150 - 650', min: 150, max: 650, unit: 'pmol/L' },
+            { id: 'hb', name: '血紅蛋白 (Hb)', ref: '13.0 - 17.5', min: 13.0, max: 17.5, unit: 'g/dL' }
+        ];
+
+        const I18N = {
+            zh: {
+                badge_protocol: "香港打工仔抗炎自救戰線 v2026.9 ULTIMATE",
+                intro_title: "你個身體唔係木頭車，係天天行緊觀塘線嘅港鐵車頭。",
+                intro_desc: "講真嗰句，喺香港打工，天天開 OT、食廢料外賣飯盒、睏得四五個鐘，身體慢性發炎就等於喺你個引擎入面塞滿觀塘放工時間嘅泥頭車。咪再聽那些吹得天花亂墜嘅廣告，呢度精選 18 大自然界與肉身修復最強戰略！",
+                support_title: "支持創作與自我審問",
+                btn_stripe: "支持本地健康內容創作 (STRIPE)",
+                btn_quiz_tag: "自我審問",
+                btn_quiz_title: "『問下自己：你個身體係咪已經天天燒緊機？』",
+                quiz_warning: "老實講，如果你天天只顧住賺錢而忽略身體，等爆廠先去求醫就大獲。你準備好認真面對身體傳出嚟嘅警號未？",
+                btn_dismiss: "知道，關閉此區塊 ✕",
+                pyramid_sub: "搞清底層邏輯",
+                pyramid_headline: "「你寧願每個月花幾百蚊買堆雜牌補充劑當心靈安慰，定係直接調整飲食徹底抗炎？」",
+                bad_logic_title: "迷思：盲目亂吞丸仔",
+                bad_logic_desc: "聽廣告狂吞雜牌丸仔，就好似大廈水務喉管爆裂，你唔去修補，反而在室內死命開大水龍頭，純粹係白白浪費水費。背景發炎唔清零，吞幾多丸仔都只係直接排走。",
+                good_logic_title: "正解：一口咬落原型食物",
+                good_logic_desc: "用原型食物擋走超加工廢料，透過牙齒撕裂咀嚼、唾液發酵，補齊關鍵抗炎要素。身體負荷一輕，精力、爆發力同睡眠品質即刻返嚟！",
+                cta_gold_title: "重新奪回身體主導權",
+                cta_gold_desc: "拒絕被超加工廢料與化學膠囊綁架，由今日開始調整飲食與作息！"
+            },
+            en: {
+                badge_protocol: "HK WORKER ANTI-INFLAMMATORY PROTOCOL v2026.9 ULTIMATE",
+                intro_title: "Your body is not a toy cart, it's an MTR train engine.",
+                intro_desc: "Long OT and bad takeaway food cause chronic inflammation. Explore these 18 powerhouse anti-inflammatory strategies.",
+                support_title: "Support Content & Self Check",
+                btn_stripe: "Support HK Health Content (Stripe)",
+                btn_quiz_tag: "Self Check",
+                btn_quiz_title: "'Ask yourself: Is your body constantly overheating?'",
+                quiz_warning: "If you prioritize work over survival until your health collapses, you'll regret it. Are you ready to face your body's signals?",
+                btn_dismiss: "Close this section ✕",
+                pyramid_sub: "Core Logic First",
+                pyramid_headline: "“Would you rather waste money on placebo pills or optimize your diet for real anti-inflammation?”",
+                bad_logic_title: "Myth: Blind Pill Popping",
+                bad_logic_desc: "Taking pills while ignoring chronic inflammation is like cranking open a tap while your pipes are leaking.",
+                good_logic_title: "Correct Logic: Physical Chewing First",
+                good_logic_desc: "Cut out ultra-processed food, replenish key nutrients via real food to clear background strain.",
+                cta_gold_title: "Reclaim Your Health Control",
+                cta_gold_desc: "Stop letting ultra-processed food and chemical fillers run your life."
+            }
+        };
+
+        let currentLang = localStorage.getItem('ts_lang') || 'zh';
+        let currentMode = localStorage.getItem('ts_mode') || 'light';
+
+        window.onload = function() {
+            const themeBtn = document.getElementById('theme-btn');
+            if (currentMode === 'dark') {
+                document.documentElement.classList.add('dark');
+                document.documentElement.classList.remove('light');
+                if (themeBtn) themeBtn.innerText = '🌙 深色';
+            } else {
+                document.documentElement.classList.remove('dark');
+                document.documentElement.classList.add('light');
+                if (themeBtn) themeBtn.innerText = '☀️ 淺色';
+            }
+
+            const now = new Date().toLocaleString('zh-HK');
+            const timeEl = document.getElementById('last-visit-time');
+            if (timeEl) timeEl.innerText = '校正時間: ' + now;
+
+            const trackerKeys = [
+                'curcumin', 'quercetin', 'mushrooms', 'chaga', 'blackseed',
+                'zinc', 'mg', 'creatine', 'd3', 'omega', 'coq10', 'glynac',
+                'potassium', 'bcomplex', 'dandelion', 'sulfora', 'asta', 'lithium'
+            ];
+
+            trackerKeys.forEach(item => {
+                const checked = localStorage.getItem('ts_chk_' + item) === 'true';
+                const el = document.getElementById('chk-' + item);
+                if (el) el.checked = checked;
+            });
+
+            applyLanguage();
+            renderMetricsTable();
+        };
+
+        function toggleTheme() {
+            const themeBtn = document.getElementById('theme-btn');
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                document.documentElement.classList.add('light');
+                currentMode = 'light';
+                if (themeBtn) themeBtn.innerText = '☀️ 淺色';
+            } else {
+                document.documentElement.classList.add('dark');
+                document.documentElement.classList.remove('light');
+                currentMode = 'dark';
+                if (themeBtn) themeBtn.innerText = '🌙 深色';
+            }
+            localStorage.setItem('ts_mode', currentMode);
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'zh' ? 'en' : 'zh';
+            localStorage.setItem('ts_lang', currentLang);
+            applyLanguage();
+        }
+
+        function applyLanguage() {
+            const dict = I18N[currentLang];
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key]) {
+                    el.innerText = dict[key];
+                }
+            });
+        }
+
+        function skipMicroInteractions() {
+            const msgBox = document.getElementById('quiz-message-box');
+            if (msgBox) msgBox.classList.remove('hidden');
+            const exContainer = document.getElementById('exchange-container');
+            if (exContainer) exContainer.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function triggerBodyCheck() {
+            const msgBox = document.getElementById('quiz-message-box');
+            if (msgBox) msgBox.classList.remove('hidden');
+        }
+
+        function dismissExchangeBlock() {
+            const block = document.getElementById('exchange-block');
+            if (block) {
+                block.style.opacity = '0';
+                setTimeout(() => {
+                    block.style.display = 'none';
+                }, 300);
+            }
+        }
+
+        function toggleTrack(item) {
+            const el = document.getElementById('chk-' + item);
+            if (el) {
+                localStorage.setItem('ts_chk_' + item, el.checked);
+            }
+        }
+
+        function renderMetricsTable(filterText = '') {
+            const tbody = document.getElementById('metrics-table-body');
+            if (!tbody) return;
+            tbody.innerHTML = '';
+
+            METRICS_DATA.filter(m => m.name.includes(filterText) || m.id.includes(filterText.toLowerCase())).forEach(m => {
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-slate-100 dark:hover:bg-slate-800/40 transition";
+                
+                tr.innerHTML = `
+                    <td class="p-3 font-bold text-slate-900 dark:text-slate-100">${m.name}</td>
+                    <td class="p-3 text-slate-500 dark:text-slate-400 font-mono">${m.ref} ${m.unit || ''}</td>
+                    <td class="p-3">
+                        <input type="number" step="0.1" placeholder="輸入數值" oninput="checkMetric(this, '${m.id}')" 
+                               class="w-24 px-2.5 py-1 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-slate-100 rounded font-mono text-xs focus:ring-1 focus:ring-amber-500 outline-none">
+                    </td>
+                    <td class="p-3" id="status-${m.id}">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400">未測試</span>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function filterMetrics() {
+            const input = document.getElementById('metric-search');
+            if (input) renderMetricsTable(input.value);
+        }
+
+        function checkMetric(input, id) {
+            const val = parseFloat(input.value);
+            const statusTd = document.getElementById('status-' + id);
+            const item = METRICS_DATA.find(m => m.id === id);
+
+            if (!statusTd) return;
+
+            if (isNaN(val) || !input.value) {
+                statusTd.innerHTML = `<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400">未測試</span>`;
+                return;
+            }
+
+            let ok = true;
+            if (item.min !== undefined && val < item.min) ok = false;
+            if (item.max !== undefined && val > item.max) ok = false;
+
+            if (ok) {
+                statusTd.innerHTML = `<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 dark:bg-emerald-500/20 text-emerald-800 dark:text-emerald-400 border border-emerald-300 dark:border-emerald-500/30">✅ 數值正常</span>`;
+            } else {
+                statusTd.innerHTML = `<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-rose-100 dark:bg-rose-500/20 text-rose-800 dark:text-rose-400 border border-rose-300 dark:border-rose-500/30">⚠️ 偏離標準</span>`;
+            }
+        }
+    </script>
+</body>
+</html>
